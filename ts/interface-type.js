@@ -11,4 +11,7 @@ var user2 = {
 };
 Student.push(user1);
 Student.push(user2);
-console.log(Student);
+var printUserInfo = function (user) {
+    console.log("Id:".concat(user.id, ", name:").concat(user.name, ", age:").concat(user.age));
+};
+Student.forEach(function (user) { return printUserInfo(user); });

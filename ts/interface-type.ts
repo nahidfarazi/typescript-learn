@@ -17,4 +17,8 @@ let user2 : IUser = {
 }
 Student.push(user1)
 Student.push(user2)
-console.log(Student);
+const printUserInfo = (user:IUser) =>{
+    console.log(`Id:${user.id}, name:${user.name}, age:${user.age}`);
+}
+
+Student.forEach((user) => printUserInfo(user));
